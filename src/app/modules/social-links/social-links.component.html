@@ -1,0 +1,13 @@
+<div class="social-links__container">
+  <div class="social-links__avatar-container">
+    <img class="social-links__avatar" src="/assets/images/avatar-jessica.jpeg" alt="Jessica" />
+  </div>
+  <div class="social-links__user-info">
+    <h1>Jessica Randall</h1>
+    <h5 class="text-primary">London, United Kingdom</h5>
+    <p>"Front-end developer and avid reader"</p>
+  </div>
+  <div class="social-links__content">
+    <a *ngFor="let item of socialLinks" [href]="item.url" class="social-links__item">{{ item.label }}</a>
+  </div>
+</div>
