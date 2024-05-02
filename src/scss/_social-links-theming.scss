@@ -6,7 +6,7 @@
     border-radius: 10px;
 
     @include variables.media-desktop {
-      padding: 2rem;
+      padding: 36px;
     }
   }
 
@@ -18,7 +18,7 @@
     }
     h5 {
       font-size: 12px;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       text-align: center;
     }
     p {
@@ -30,6 +30,7 @@
   a.social-links__item {
     background-color: variables.$grey;
     font-weight: 900;
+    font-size: variables.$font-size;
     width: 100%;
     padding: 1rem;
     border-radius: 10px;
