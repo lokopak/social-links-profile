@@ -17,18 +17,24 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  }
+
+  .social-links__avatar-container {
+    margin-bottom: 1rem;
+  }
+
+  .social-links__user-info {
+    margin-bottom: 1.5rem;
   }
 
   .social-links__content {
-    padding: 1rem;
+    padding: 0 1rem;
     gap: 1rem;
   }
 
   .social-links__avatar {
-    width: 90px;
-    height: 90px;
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
   }
 
