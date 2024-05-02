@@ -1,31 +1,17 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+export interface SocialLinkInput {
+  socialLinks: SocialLink[];
+  avatar: string;
+  name: string;
+  summary: string;
+  location: string;
+}
 
 export interface SocialLink {
   url: string;
   label: string;
 }
-const SOCIAL_LINKS: SocialLink[] = [
-  {
-    url: '#',
-    label: 'Github',
-  },
-  {
-    url: '#',
-    label: 'Frontend Mentor',
-  },
-  {
-    url: '#',
-    label: 'LinkedIn',
-  },
-  {
-    url: '#',
-    label: 'Twitter',
-  },
-  {
-    url: '#',
-    label: 'Instagram',
-  },
-];
 
 @Component({
   selector: 'app-social-links',
@@ -38,5 +24,5 @@ const SOCIAL_LINKS: SocialLink[] = [
   },
 })
 export class SocialLinksComponent {
-  socialLinks: SocialLink[] = SOCIAL_LINKS;
+  @Input() value?: SocialLinkInput;
 }
