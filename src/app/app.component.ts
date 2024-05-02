@@ -12,7 +12,7 @@ export class AppComponent {
   value: SocialLinkInput = {
     name: 'Jessica Randall',
     summary: 'Front-end developer and avid reader',
-    avatar: '/assets/images/avatar-jessica.jpeg',
+    avatar: 'avatar-jessica.jpeg',
     location: 'London, United Kingdom',
     socialLinks: [
       {
