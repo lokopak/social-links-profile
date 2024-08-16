@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
-import { SocialLinkInput } from './modules/social-links/social-links.component';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { SocialLinkInput, SocialLinksComponent } from './modules/social-links/social-links.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [SocialLinksComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
   title = 'social-links-profile';

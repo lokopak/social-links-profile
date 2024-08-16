@@ -8,7 +8,7 @@ describe('SocialLinksComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SocialLinksComponent],
+      imports: [SocialLinksComponent],
     });
     fixture = TestBed.createComponent(SocialLinksComponent);
     component = fixture.componentInstance;

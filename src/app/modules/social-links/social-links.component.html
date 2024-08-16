@@ -1,13 +1,17 @@
-<div class="social-links__container" *ngIf="value">
-  <div class="social-links__avatar-container">
-    <img class="social-links__avatar" [src]="getAvatarSrc()" alt="Jessica" />
+@if (value) {
+  <div class="social-links__container">
+    <div class="social-links__avatar-container">
+      <img class="social-links__avatar" [src]="getAvatarSrc()" alt="Jessica" />
+    </div>
+    <div class="social-links__user-info">
+      <h1>{{ value.name }}</h1>
+      <h5 class="text-primary">{{ value.location }}</h5>
+      <p>"{{ value.summary }}"</p>
+    </div>
+    <div class="social-links__content">
+      @for (item of value.socialLinks; track $index) {
+        <a [href]="item.url" class="social-links__item">{{ item.label }}</a>
+      }
+    </div>
   </div>
-  <div class="social-links__user-info">
-    <h1>{{ value.name }}</h1>
-    <h5 class="text-primary">{{ value.location }}</h5>
-    <p>"{{ value.summary }}"</p>
-  </div>
-  <div class="social-links__content">
-    <a *ngFor="let item of value.socialLinks" [href]="item.url" class="social-links__item">{{ item.label }}</a>
-  </div>
-</div>
+}

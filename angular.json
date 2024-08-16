@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "social-links-profile:build:production"
+              "buildTarget": "social-links-profile:build:production"
             },
             "development": {
-              "browserTarget": "social-links-profile:build:development"
+              "buildTarget": "social-links-profile:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "social-links-profile:build"
+            "buildTarget": "social-links-profile:build"
           }
         },
         "test": {
